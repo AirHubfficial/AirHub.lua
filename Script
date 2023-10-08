@@ -6,36 +6,26 @@ local Window = OrionLib:MakeWindow({
 		ConfigFolder = "OrionTest",
 		IntroText = "Wait To Load.."
 	})
-	 local Tab = Window:MakeTab({
-		Name = "Game",
-		Icon = "rbxassetid://4483345998",
-		PremiumOnly = false
-    local Tab = Window:MakeTab({
-    Tab:AddButton({
+local Tab = Window:MakeTab({
+	Name = "Game",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+OrionLib:MakeNotification({
+	Name = "Succesfully Executed!",
+	Content = "Air Hub | Version 0.0.2 Update With Orion Library!",
+	Image = "rbxassetid://4483345998",
+	Time = 9
+})
+Tab:AddButton({
 	Name = "Break In 2",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/AirHubfficial/Break-In-2-Script/main/Script.New"))();
   	end    
 })
- Tab:AddButton({
+Tab:AddButton({
 	Name = "Prison Life",
 	Callback = function()
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/AirHubfficial/Prison-Life/main/lua')))()
   	end    
 })
-		Name = "Credit",
-		Icon = "rbxassetid://4483345998",
-		PremiumOnly = false
-	})
-    local Section = Tab:AddSection({
-		Name = "Credit To Air Hub"
-	})
-    local Section = Tab:AddSection({
-		Name = "Thanks Air Hub"
-	})
-    local Section = Tab:AddSection({
-		Name = "Thanks Billy Make Script"
-	})
-	local Section = Tab:AddSection({
-		Name = "Thanks Billy Make Script"
-	})
