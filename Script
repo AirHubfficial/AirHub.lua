@@ -22,7 +22,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
     Tab:AddButton({
 	Name = "Break In 2",
 	Callback = function()
-      		print("button pressed")
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/AirHubfficial/Break-In-2-Script/main/Script.New"))();
+  	end    
+})
+ Tab:AddButton({
+	Name = "Prison Life",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/AirHubfficial/Prison-Life/main/lua')))()
   	end    
 })
 		Name = "Credit",
